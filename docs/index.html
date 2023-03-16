@@ -43,10 +43,10 @@
         .dark-mode a {
             color: var(--dark-link-color);
         }
-        .toggle-button {
+		.toggle-button {
 			position: fixed;
 			top: 10px;
-			right: calc(50% - 390px);
+			right: calc(50% - 420px);
 			display: inline-block;
 			background-color: transparent;
 			padding: 5px;
@@ -57,7 +57,12 @@
 			line-height: 1;
 			vertical-align: middle;
 			z-index: 1000;
-        }
+		}
+		@media screen and (max-width: 850px) {
+			.toggle-button {
+				right: 20px;
+			}
+		}
     </style>
     <script>
         function toggleDarkMode() {
