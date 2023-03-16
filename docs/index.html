@@ -55,20 +55,21 @@
     <script>
         function toggleDarkMode() {
         const body = document.body;
-        const toggleIcon = document.getElementById("toggleIcon");
+        const toggleButton = document.getElementById("toggleButton");
 
         body.classList.toggle('dark-mode');
         if (body.classList.contains('dark-mode')) {
-            toggleIcon.className = "fas fa-moon";
+            toggleButton.textContent = "🌙";
         } else {
-            toggleIcon.className = "fas fa-sun";
+            toggleButton.textContent = "☀️";
         }
     }
     </script>
 </head>
 <body>
+    
     <button id="toggleButton" class="toggle-button" onclick="toggleDarkMode()">
-        <i id="toggleIcon" class="fas fa-sun"></i>
+        ☀️
     </button>
     
     <h1>Emery Aydan - Portfolio 🚀</h1>
